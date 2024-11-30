@@ -1,9 +1,8 @@
-// Lerp function for smooth interpolation
 function lerp(a, b, t) {
     return a + (b - a) * t;
 }
 
-// Audio note playing function
+
 function playNote(freq, type = 'sine') {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     const dur = 0.2;
