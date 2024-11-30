@@ -1,4 +1,3 @@
-// Column class for rendering and animating sorting columns
 class Column {
     constructor(x, y, width, height) {
         this.x = x;
