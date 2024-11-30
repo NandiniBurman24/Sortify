@@ -1,4 +1,3 @@
-// Canvas and Simulation Setup
 const myCanvas = document.getElementById('myCanvas');
 myCanvas.width = 1000;
 myCanvas.height = 500;
@@ -13,7 +12,6 @@ let moves = [];
 let cols = [];
 let moveIndex = 0;
 
-// Initialize the simulation with random array
 function init() {
     array = Array.from({ length: n }, () => Math.random());
     moves = [];
@@ -27,7 +25,6 @@ function init() {
     animate();
 }
 
-// Bubble Sort Algorithm
 function bubbleSort(arr) {
     const moves = [];
     const array = [...arr];
@@ -45,13 +42,13 @@ function bubbleSort(arr) {
     return moves;
 }
 
-// Trigger sorting
+
 function play() {
     moves = bubbleSort(array);
     moveIndex = 0;
 }
 
-// Animation loop
+
 function animate() {
     ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
 
@@ -86,5 +83,5 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-// Initialize the simulation
+
 init();
