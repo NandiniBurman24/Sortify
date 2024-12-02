@@ -1,10 +1,10 @@
 const myCanvas = document.getElementById('myCanvas');
 myCanvas.width = 1000;
-myCanvas.height = 500;
+myCanvas.height = 600;
 const margin = 30;
 const n = 20;
 const spacing = (myCanvas.width - margin * 2) / n;
-const maxColumnHeight = 400;
+const maxColumnHeight = 300;
 const ctx = myCanvas.getContext("2d");
 
 let array = [];
